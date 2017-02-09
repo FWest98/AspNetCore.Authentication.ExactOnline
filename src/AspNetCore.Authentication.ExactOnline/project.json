@@ -16,7 +16,7 @@
     "owners": [
       "joelharkes"
     ],
-    "releaseNotes": "1.0.0 initial releases",
+    "releaseNotes": "#1.0.0\n\n * initial releases",
     "iconUrl": "https://pbs.twimg.com/profile_images/517633696585633792/3LQk9h4x.png",
     "projectUrl": "https://github.com/joelharkes/AspNetCore.Authentication.ExactOnline",
     "requireLicenseAcceptance": false,

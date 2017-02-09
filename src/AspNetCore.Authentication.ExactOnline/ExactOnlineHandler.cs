@@ -10,7 +10,7 @@ using Newtonsoft.Json.Linq;
 
 namespace AspNetCore.Authentication.ExactOnline
 {
-    public class ExactOnlineHandler : OAuthHandler<ExactOnlineOptions>
+    public class ExactOnlineHandler : OAuthHandler<ExactOnlineAuthenticationOptions>
     {
         public ExactOnlineHandler(HttpClient backchannel) : base(backchannel)
         {

@@ -3,9 +3,12 @@ using Microsoft.AspNetCore.Http;
 
 namespace AspNetCore.Authentication.ExactOnline
 {
-    public class ExactOnlineOptions : OAuthOptions
+    /// <summary>
+    /// Options class for Exact online authentication.
+    /// </summary>
+    public class ExactOnlineAuthenticationOptions : OAuthOptions
     {
-        public ExactOnlineOptions()
+        public ExactOnlineAuthenticationOptions()
         {
             AuthenticationScheme = ExactOnlineDefaults.AuthenticationScheme;
             DisplayName = AuthenticationScheme;
@@ -15,6 +18,9 @@ namespace AspNetCore.Authentication.ExactOnline
             UserInformationEndpoint = ExactOnlineDefaults.UserInformationEndpoint;
         }
 
+        /// <summary>
+        /// Webhook secret api key
+        /// </summary>
         public string WebhookSecret { get; set; }
     }
 }

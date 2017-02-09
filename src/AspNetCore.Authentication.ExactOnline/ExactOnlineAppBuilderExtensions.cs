@@ -6,6 +6,11 @@ namespace AspNetCore.Authentication.ExactOnline
 {
     public static class ExactOnlineAppBuilderExtensions
     {
+        /// <summary>
+        /// Add exact authentication to the OAuth authentication providers.
+        /// Don't forget to Configure <see cref="ExactOnlineAuthenticationOptions"/>
+        /// </summary>
+        /// <exception cref="ArgumentNullException">Thrown when app is null</exception>
         public static IApplicationBuilder UseExactOnlineAuthentication(this IApplicationBuilder app)
         {
             if (app == null)
@@ -16,7 +21,11 @@ namespace AspNetCore.Authentication.ExactOnline
             return app.UseMiddleware<ExactOnlineMiddleware>();
         }
 
-        public static IApplicationBuilder UseExactOnlineAuthentication(this IApplicationBuilder app, ExactOnlineOptions options)
+        /// <summary>
+        /// Add exact online as OAuth authentication provider
+        /// </summary>
+        /// <exception cref="ArgumentNullException">if either argument is null</exception>
+        public static IApplicationBuilder UseExactOnlineAuthentication(this IApplicationBuilder app, ExactOnlineAuthenticationOptions options)
         {
             if (app == null)
             {

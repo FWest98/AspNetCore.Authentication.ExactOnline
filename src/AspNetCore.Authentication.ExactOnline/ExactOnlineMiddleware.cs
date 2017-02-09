@@ -8,13 +8,13 @@ using Microsoft.Extensions.Options;
 
 namespace AspNetCore.Authentication.ExactOnline
 {
-    public class ExactOnlineMiddleware : OAuthMiddleware<ExactOnlineOptions>
+    public class ExactOnlineMiddleware : OAuthMiddleware<ExactOnlineAuthenticationOptions>
     {
-        public ExactOnlineMiddleware(RequestDelegate next, IDataProtectionProvider dataProtectionProvider, ILoggerFactory loggerFactory, UrlEncoder encoder, IOptions<SharedAuthenticationOptions> sharedOptions, IOptions<ExactOnlineOptions> options) : base(next, dataProtectionProvider, loggerFactory, encoder, sharedOptions, options)
+        public ExactOnlineMiddleware(RequestDelegate next, IDataProtectionProvider dataProtectionProvider, ILoggerFactory loggerFactory, UrlEncoder encoder, IOptions<SharedAuthenticationOptions> sharedOptions, IOptions<ExactOnlineAuthenticationOptions> options) : base(next, dataProtectionProvider, loggerFactory, encoder, sharedOptions, options)
         {
         }
 
-        protected override AuthenticationHandler<ExactOnlineOptions> CreateHandler()
+        protected override AuthenticationHandler<ExactOnlineAuthenticationOptions> CreateHandler()
         {
             return new ExactOnlineHandler(Backchannel);
         }
