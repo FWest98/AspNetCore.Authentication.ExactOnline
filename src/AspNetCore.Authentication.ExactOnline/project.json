@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "authors": [
+    "joelharkes",
+    "Trancon BV"
+  ],
+  "description": "Implementation of Microsoft.AspNetCore.Authentication for Exact online",
+  "PackOptions": {
+    "summary": "Implementation of Microsoft.AspNetCore.Authentication for Exact online",
+    "tags": [
+      "exact",
+      "exactonline",
+      "authentication",
+      "oauth"
+    ],
+    "owners": [
+      "joelharkes"
+    ],
+    "releaseNotes": "1.0.0 initial releases",
+    "iconUrl": "https://pbs.twimg.com/profile_images/517633696585633792/3LQk9h4x.png",
+    "projectUrl": "https://github.com/joelharkes/AspNetCore.Authentication.ExactOnline",
+    "requireLicenseAcceptance": false,
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/joelharkes/AspNetCore.Authentication.ExactOnline"
+    }
+  },
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {
+    "Newtonsoft.Json": "9.0.1",
+    "Microsoft.AspNetCore.Authentication.OAuth": "1.0.0"
+  },
+  "frameworks": {
+    "netstandard1.3": {
+      "dependencies": {
+      }
+    }
+  }
+}

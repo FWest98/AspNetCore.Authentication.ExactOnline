@@ -1,0 +1,24 @@
+{
+  "name": "dotnet-authentication-exactonline",
+  "version": "1.0.0",
+  "description": "scripth helper for dotnet core library",
+  "main": "index.js",
+  "scripts": {
+    "start": "dotnet restore && cd src\\AspNetCore.Authentication.ExactOnline && dotnet build",
+    "pack": "cd src\\AspNetCore.Authentication.ExactOnline && dotnet pack -c Release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelharkes/AspNetCore.Authentication.ExactOnline.git"
+  },
+  "keywords": [
+    "authentication",
+    "dotnet"
+  ],
+  "author": "joelharkes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelharkes/AspNetCore.Authentication.ExactOnline/issues"
+  },
+  "homepage": "https://github.com/joelharkes/AspNetCore.Authentication.ExactOnline#readme"
+}
