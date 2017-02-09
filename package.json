@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "dotnet restore && cd src\\AspNetCore.Authentication.ExactOnline && dotnet build",
-    "pack": "cd src\\AspNetCore.Authentication.ExactOnline && dotnet pack -c Release"
+    "pack": "cd src\\AspNetCore.Authentication.ExactOnline && dotnet pack -c Release -o ..\\.."
   },
   "repository": {
     "type": "git",
