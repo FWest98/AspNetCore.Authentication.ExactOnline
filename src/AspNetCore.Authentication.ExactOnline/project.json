@@ -4,7 +4,7 @@
     "joelharkes",
     "Trancon BV"
   ],
-  "iconUrl": "https://pbs.twimg.com/profile_images/517633696585633792/3LQk9h4x.png",
+  "iconUrl": "https://raw.githubusercontent.com/joelharkes/AspNetCore.Authentication.ExactOnline/master/logo.png",
   "projectUrl": "https://github.com/joelharkes/AspNetCore.Authentication.ExactOnline",
   "description": "Implementation of Microsoft.AspNetCore.Authentication for Exact online",
   "summary": "Implementation of Microsoft.AspNetCore.Authentication for Exact online",
@@ -31,8 +31,11 @@
     "Microsoft.AspNetCore.Authentication.OAuth": "1.0.0"
   },
   "frameworks": {
-    "netstandard1.3": {
-      "dependencies": {}
+    "netstandard1.3": {},
+    "net451": {
+      "dependencies": {
+        "System": "4.0.0"
+      }
     }
   }
 }
