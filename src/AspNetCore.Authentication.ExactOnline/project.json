@@ -31,11 +31,7 @@
     "Microsoft.AspNetCore.Authentication.OAuth": "1.0.0"
   },
   "frameworks": {
-    "netstandard1.3": {},
-    "net451": {
-      "dependencies": {
-        "System": "4.0.0"
-      }
+    "netstandard1.3": {}
     }
   }
 }
